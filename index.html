@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Battle Simulator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="IMG/images.png" type="image/png"> 
+</head>
+<body>
+    <div class="battle-container">
+        <h1>Pokemon Battle Simulator</h1>
+
+        <body>
+            <div class="battle-container">
+                <div class="battle-field">
+                    <!-- Player 1's Pokémon -->
+                    <div class="pokemon" id="pokemon1">
+                        <h2>Charmander</h2>
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
+                        <p id="hp1">HP: 100</p>
+                        <button class="move-btn" id="move1_1">Scratch</button>
+                        <button class="move-btn" id="move1_2">Fire Blast</button>
+                    </div>
+        
+                    <!-- Player 2's Pokémon -->
+                    <div class="pokemon" id="pokemon2">
+                        <h2>Squirtle</h2>
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
+                        <p id="hp2">HP: 100</p>
+                        <button class="move-btn" id="move2_1">Tackle</button>
+                        <button class="move-btn" id="move2_2">Water Gun</button>
+                    </div>
+                </div>
+        
+                <div class="battle-log">
+                    <h3>Battle Log</h3>
+                    <div id="log"></div>
+                </div>
+
+        <button id="resetBtn">Reset Battle</button>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
